@@ -1,0 +1,608 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #353535; 
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+header#topo h1{
+  font-family: 'Pacifico', cursive, sans-serif; 
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header#topo{
+  background-color: #353535;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header#topo nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header#topo nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header#topo nav ul li a:hover {
+  color: #0b7a55; 
+  
+}
+
+
+.banner {
+  position: relative;
+}
+
+.banner img{
+  /*position: relative; teste*/
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner h2{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  /*top: 90px;
+  left: 20px;*/
+  color: #ffffff;          
+  font-size: 2rem;
+  text-align: left;
+  padding: 0 20px;        
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/*teste*/
+.cards-imoveis{ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+}
+
+
+.card picture img { 
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.card { 
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-content h4{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+
+
+.card-content p {
+  text-align: left;
+  font-size: 0.9rem;
+  
+}
+
+
+
+.btn-detalhes{
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #353535;
+  color: #fff;
+  cursor: pointer;
+}
+
+h3{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #353535;
+}
+
+#sobre {
+  background-color: #fff;
+  padding: 3rem 2rem;
+}
+
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sobre-texto{
+  flex: 1 1 400px;
+  color: #353535;
+  line-height: 1.6;
+}
+
+.sobre-texto p + p {
+  margin-top: 1rem;
+}
+
+.sobre-imagem {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.sobre-imagem img{
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#servicos {
+background-color: #fff;
+padding: 4rem 2rem;
+text-align: center; 
+}
+
+#servicos h3 {
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+
+.container-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.servico-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 280px;
+  flex: 1 1 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+
+.servico-card h4 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.servico-card p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+#contactos {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  align-items: center; 
+  justify-content: center; 
+  gap: 3rem;
+  text-align: left;
+  border-radius: 8px;
+
+  max-width: 1100px; 
+  margin: 0 auto; 
+}
+
+.contactos-info,
+.contactos-mapa {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contactos-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+
+.contactos-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #353535;
+  
+}
+
+.contactos-info a {
+  color: #678d58;
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.contactos-info a:hover,
+#contactos a:hover {
+  color: #08804a;
+}
+
+
+#contactos > a[href="#topo"] {
+  grid-column: 1 / -1; 
+  justify-self: center; 
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #678d58;
+  text-decoration: none;
+  border: 1px solid #0b7a55;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+
+#contactos > a:hover {
+  background-color: #0b7a55;
+  color: #fff;
+}
+
+.contactos-mapa iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  border: none;
+}
+
+/*are do cliente*/
+#area-cliente {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#area-cliente form {
+  font-weight: 500;
+  color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#area-cliente label {
+  font-weight: 500;
+  color: #353535;
+  margin-bottom: 0.3rem; 
+}
+
+#area-cliente textarea {
+  min-height: 120px; 
+}
+
+#area-cliente input,
+#area-cliente textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-color: #678d58;
+  transition: border-color 0.3s;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+#area-cliente input:focus,
+#area-cliente textarea:focus {
+  border-color: #0b7a55;
+}
+
+
+#area-cliente button {
+   width: 100%;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #0b7a55;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   margin-top: 1.5rem; 
+}
+
+#area-cliente button:hover {
+  background-color: #08804a;
+}
+
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+}
+
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  
+}
+
+.whatsapp-btn img {
+  width: 48px;
+  height: 48px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Header */
+  header#topo {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  }
+
+  header#topo h1 {
+  align-self: center;
+  padding-left: 0;
+  margin: 0;
+  color: #353535;
+  font-size: 1.5rem;
+  }
+
+  header#topo nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+  header#topo nav ul li:last-child {
+  grid-column: 1 / -1;
+  }
+
+  header#topo nav ul a {
+  color: #353535;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  }
+
+  /* Banner */
+  .banner h2 {
+  top: 1rem;
+  right: 1rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.3;
+  white-space: normal;
+  overflow-wrap: break-word;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
+  }
+
+  /* Cards */ 
+  .cards-imoveis {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+   
+  }
+
+  
+
+  /* Serviços */
+  #servicos {
+    padding: 2rem 1rem;
+  }
+
+  #servicos h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  /* Área do Cliente */
+  #area-cliente {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+
+  #area-cliente input,
+  #area-cliente textarea,
+  #area-cliente button {
+    font-size: 0.95rem;
+  }
+
+  #area-cliente button {
+    padding: 0.8rem;
+  }
+
+  /* Contactos */
+  #contactos {
+  width: calc(100% - 2rem);
+  min-width: 0;
+  padding: 2rem 1rem;
+  margin: 2rem auto 0;
+  text-align: center;
+  grid-template-columns: minmax(0, 1fr);
+  }
+
+ .contactos-info,
+ .contactos-mapa {
+  width: 100%;
+  min-width: 0;
+}
+
+  #contactos p,
+  #contactos a {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+
+
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-content {
+  position: relative;
+  width: min(500px, 100%);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 18px;
+}
+
+#modal-imagem {
+  display: block;
+  width: 100%;
+  height: clamp(160px, 45vw, 230px);
+  padding: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#modal-descricao {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.fechar {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  color: #353535;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fechar:hover {
+  color: #678d58;
+}
+
+  
+
+
+  
+
+  
+
+
+
+
+
+    
+
+
+
+
+
+
+
